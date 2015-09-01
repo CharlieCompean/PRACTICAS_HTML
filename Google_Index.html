@@ -3,38 +3,73 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Google México</title>
+	<link href='https://fonts.googleapis.com/css?family=Cardo:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>	
 	<style>
+	div span{
+		font-family: 'Cardo', serif;
+	}
+	input{
+		color: gray;
+		font-family: sans-serif;
+		font-size: 16px;
+		background-color: transparent;
+		border: 1px solid gray;
+	}
 	.logo{
 		height: 207px;
 		text-align: center;
 		padding-top: 100px;
+			
 	}
 	#BLUE{
 		font-size: 95px;
-		font-family: times;
 		color: #105FC7;
 	}
 	#RED{
 		font-size: 95px;
-		font-family: times;
 		color: #CE3E3E;
 	}
 	#YELLOW{
 		font-size: 95px;
-		font-family: times;
 		color: rgb(222, 156, 38);
 	}
 	#GREEN{
 		font-size: 95px;
-		font-family: times;
 		color: #39A539;
+	}
+	#LOGO-SUB {
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+    left: 125px;
+    position: relative;
+    top: -29px;
+}
+	#SEARCH{
+		text-align: center;
+	}
+	#BUTTON{
+		text-align: center;
+		color: #6B6666;
+		font-family: sans-serif;
+		font-size: 16px;
+		background-color: #D2CDCD;
+		border: 0px;
+	}
+	#BOTTOM{
+		background-color: #D2CDCD;
+		height: 40px;
+		vertical-align: 50%;
+	}
+	#BOTTOM_RIGHT{
+		text-align: right;
+	}
+	#BOTTOM_LEFT{
+		text-align: left;
 	}
 	</style>
 </head>
 <body>
-	<div class="user_line">
-		
-	</div>
 	<div class="logo">
 		<span id="BLUE">G</span>
 		<span id="RED">o</span>
@@ -42,6 +77,26 @@
 		<span id="BLUE">g</span>
 		<span id="GREEN">l</span>
 		<span id="RED">e</span>
+		<div id="LOGO-SUB">México</div>
+	</div>
+	<div id="SEARCH">
+		<form method="get" action="https://www.google.com/search">
+		<input type="text" size="70" value="Busca en Google o escribe una URL">
+		<br>
+		<br>
+		<br>
+		<input id="BUTTON" type="submit" value="Buscar con Google" action="https://www.google.com/search">
+		<input id="BUTTON" type="submit" value="Me siento con suerte" action="https://www.google.com/search">
+		</form>
+	</div>
+	<br>
+	<div id="BOTTOM">
+		<span id="BOTTOM_LEFT">Publicidades</span>
+		<span id="BOTTOM_LEFT">Negocios</span>
+		<span id="BOTTOM_LEFT">Acerca de</span>
+		<span id="BOTTOM_RIGHT">Privacidad</span>
+		<span id="BOTTOM_RIGHT">Condiciones</span>
+		<span id="BOTTOM_RIGHT">Preferencias</span>
 	</div>
 </body>
 </html>
