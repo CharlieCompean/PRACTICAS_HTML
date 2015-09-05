@@ -23,10 +23,10 @@
 			max-width: 960px;
 			height: 369px;
 			margin: 0 auto;
-    		position: relative;
+			position: relative;
 		}
 		.name{
-			background-color: rgba(65,138,59,0.25);
+			background-color: transparent;
 			top: 0px;
 			height: 65px;
 			width: 570px;
@@ -55,8 +55,29 @@
 			float: right;
 			position: relative;
 		}
+		#sign-in{
+			font-family: sans-serif;
+			color: #7E6A6A;
+			font-size: 13px;
+			padding-top: 15px;
+		}
+		.form-box-signin{
+			width: 130px;
+			height: 52px;
+			float: left;
+			position: relative;
+			text-align: left;
+		}
+		#button-signin{
+			background-color: #f5f5f5;
+			padding: 5px;
+			border: 0;
+			float: left;
+			position: relative;
+			margin-top: -2px;
+		}
 		.phrase{
-			background-color: rgba(99,47,47,0.16);
+			background-color: transparent;
 			top: 0px;
 			height: 296px;
 			width: 65%;
@@ -75,23 +96,27 @@
   			-webkit-text-fill-color: transparent;
 		}
 		.New-account{
-			background-color: transparent;
+			background-color: rgba(99,47,47,0.16);
 			top: 0px;
-			height: 250px;
+			height: 297px;
 			width: 35%;
 			float: right;
 			position: relative;
 			display: inline-block;
+			font-family: sans-serif;
+			font-size: 20px;
+			text-align: center;
 		}
 		.Social{
 			background: -webkit-linear-gradient(top, #B7B7B7, #3E3434);
-			top: 170px;
+			top: 172px;
 			height: 35px;
 			max-width: 300px;
 			margin: 0 auto;
 			position: relative;
 			float: center;
 			bottom: 0px;
+			padding-left: 3px;
 		}
 		.content-main{
 			background-color: rgba(55,16,111,0.41);
@@ -99,7 +124,6 @@
 			height: 500px;
 			margin: 390px auto;
     		position: relative;
-    		border: 1px dotted black;
 		}
 		.main-left{
 			background-color: #f4f2e9;
@@ -115,6 +139,12 @@
 			position: relative;
 			display: inline-block;
 		}
+		.title{
+			font-family: sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -126,29 +156,40 @@
 					<span id="reads">reads</span>
 				</div>
 				<div class="user-login">
-					<div class="sign-in">
-						<span id="email-box">Email address</span>
-						<span id="password">Password</span>
-						<span>Sign in</span>
+					<div id="sign-in">
+						<div class="form-box-signin">
+							<input id="email-box" type="email" placeholder="Email address" tabindex="1">
+							<br>
+							<input id="remember-me" type="checkbox" checked>
+							<label for="remember-me">Remember me</label>
+						</div>
+						<div class="form-box-signin">
+							<input id="password" type="password" placeholder="Password" tabindex="1">
+							<br>
+							<a href="www.google.com">Forgot it?</a>
+						</div>
+						<div class="form-box-signin">
+							<input id="button-signin" type="submit" value="Sign In">
+						</div>
 					</div>
 				</div>
 				<div class="phrase">
 					<h1 id="long-phrase">Meet your next<br>favorite book.</h1>
 				</div>
 				<div class="New-account">
-					<p id="Create">New here? Create a free account!</p>
+					<p class="title">New here? Create a free account!</p>
 					<p id="name-address">Name</p>
 					<p id="name-address">Email Address</p>
 					<p id="password-two">Password</p>
 					<span id="button-sign-up">Sign up</span>
-					<span>By clicking "Sign Up" I agree...</span>
-					<div class="Social">
-						<span id="social-alt"><em>or</em> sign in using</span>
-						<span id="logo-mini">FB</span>
-						<span id="logo-mini">Twt</span>
-						<span id="logo-mini">Google+</span>
-						<span id="logo-mini">Amazon</span>
-					</div>
+						<span class="terms">By clicking "Sign Up" I agree...</span>
+						<div class="Social">
+							<span id="social-alt"><em>or</em> sign in using</span>
+							<span id="logo-mini">FB</span>
+							<span id="logo-mini">Twt</span>
+							<span id="logo-mini">Google+</span>
+							<span id="logo-mini">Amazon</span>
+						</div>
 				</div>
 			</div>
 		</div>
