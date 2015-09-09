@@ -48,7 +48,7 @@
 			font-style: normal;
 		}
 		.user-login{
-			background-color: #D4D2D2;
+			background-color: transparent;
 			height: 73px;
 			width: 390px;
 			display: inline-block;
@@ -96,7 +96,7 @@
   			-webkit-text-fill-color: transparent;
 		}
 		.New-account{
-			background-color: rgba(99,47,47,0.16);
+			background-color: transparent;
 			top: 0px;
 			height: 297px;
 			width: 35%;
@@ -109,9 +109,9 @@
 		}
 		.Social{
 			background: -webkit-linear-gradient(top, #B7B7B7, #3E3434);
-			top: 172px;
+			top: 62px;
 			height: 35px;
-			max-width: 300px;
+			max-width: 250px;
 			margin: 0 auto;
 			position: relative;
 			float: center;
@@ -127,23 +127,89 @@
 		}
 		.main-left{
 			background-color: #f4f2e9;
-			width: 500px;
+			width: 550px;
 			float: left;
 			position: relative;
 			display: inline-block;
 		}
+		.left-top{
+			float: center;
+			max-width: 550px;
+		}
+		#top-left{
+			float: left;
+			position: relative;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+		#top-right{
+			float: right;
+			position: relative;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+		.information{
+			font-family: sans-serif;
+			font-size: 11px;
+			text-align: justify;
+		}
 		.aside{
 			background-color: rgba(99,47,47,0.36);
-			width: 350px;
+			width: 410px;
 			float: right;
 			position: relative;
 			display: inline-block;
 		}
 		.title{
 			font-family: sans-serif;
-			font-size: 20px;
-			font-weight: bold;
+			font-size: 18px;
 			text-align: center;
+			padding-top: 17px;
+		}
+		#name-address{
+			font-size: 16px;
+			padding: 5px;
+			margin: 3px;
+		}
+		#password-two{
+			font-size: 16px;
+			padding: 5px;
+			margin: 3px;
+		}
+		#button-sign-up{
+			background:-webkit-linear-gradient(top, #E4DBCE, #CE901F);
+			border: 0;
+			font-size: 17px;
+			font-weight: bold;
+			padding: 8px;
+			font-family: sans-serif;
+			margin: 5px;
+		}
+		#terms{
+			font-family: sans-serif;
+			font-size: 11px;
+			text-align: justify;
+			display: inline-block;
+			float: right;
+			padding-top: 10px;
+			padding-right: 20px;
+			color: gray;
+		}
+		#social-alt{
+			font-family: sans-serif;
+			font-size: 13px;
+			color: white;
+			display: inline-block;
+			float: left;
+			margin-top: 6px;
+			margin-left: 10px;
+		}
+		.social-icons{
+			margin: 2px;
+		}
+		#Social-Icons{
+			display: inline-block;
+			margin-left: -10px;
 		}
 	</style>
 </head>
@@ -178,17 +244,20 @@
 				</div>
 				<div class="New-account">
 					<p class="title">New here? Create a free account!</p>
-					<p id="name-address">Name</p>
-					<p id="name-address">Email Address</p>
-					<p id="password-two">Password</p>
-					<span id="button-sign-up">Sign up</span>
-						<span class="terms">By clicking "Sign Up" I agree...</span>
+					<input id="name-address" type="text" placeholder="Name" size="35"><br>
+					<input id="name-address" type="text" placeholder="Email address" size="35"><br>
+					<input id="password-two" type="password" placeholder="Password" size="35"><br>
+					<span><input id="button-sign-up" type="submit" value="Sign up"></span>
+						<div id="terms">By clicking "Sign Up" I agree to the<br> Goodreads Terms of Service and<br> confirm that I am at least 13 years old.</div>
 						<div class="Social">
-							<span id="social-alt"><em>or</em> sign in using</span>
-							<span id="logo-mini">FB</span>
-							<span id="logo-mini">Twt</span>
-							<span id="logo-mini">Google+</span>
-							<span id="logo-mini">Amazon</span>
+							<span id="social-alt"><em>or</em> sign in using
+							</span>
+							<div id="Social-Icons">
+								<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_facebook-99e862a1d6c0b1f359c0332006e16e10.png"/></span>
+								<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_twitter-9922ba9506d10862d03a558f4424c026.png"/></span>
+								<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_google-5e6d6f57a11fc40ae295bcaa0098b482.png"/></span>
+								<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_amazon-c6b72b6cb35e3c975a179cebad1e7ace.png"></span>
+							</div>
 						</div>
 				</div>
 			</div>
@@ -196,7 +265,16 @@
 	</header>
 		<div class="content-main">
 			<div class="main-left">
-				<div class="left-top"></div>
+				<div class="left-top">
+					<div id="top-left">
+						<p class="title">Deciding what to read next?</p>
+						<p class="information">You’re in the right place. Tell us what titles or<br> genres you’ve enjoyed in the past, and we’ll give<br> you surprisingly insightful recommendations.</p>
+					</div>
+					<div id="top-rigt">
+						<p class="title">What are your friends reading?</p>
+						<p class="information">Chances are your friends are discussing their<br> favorite (and least favorite) books on Goodreads.<br> Want to learn more? Take the tour.</p>
+					</div>
+				</div>
 				<div class="left-middle"></div>
 				<div class="left-bottom"></div>
 			</div>
