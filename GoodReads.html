@@ -7,6 +7,9 @@
 		*{
 			margin: 0px;
 		}
+		a{
+			color: #666600;
+		}
 		.Header{
 			background-image: url(http://s.gr-assets.com/assets/home/masthead_background.jpg);
 			background-position: center;
@@ -119,7 +122,7 @@
 			padding-left: 3px;
 		}
 		.content-main{
-			background-color: rgba(55,16,111,0.41);
+			background-color: rgba(55,16,111,0.18);
 			width: 960px;
 			height: 500px;
 			margin: 390px auto;
@@ -127,7 +130,7 @@
 		}
 		.main-left{
 			background-color: transparent;
-			width: 550px;
+			width: 600px;
 			float: left;
 			position: relative;
 			display: inline-block;
@@ -135,6 +138,7 @@
 		.left-top{
 			float: center;
 			max-width: 550px;
+			height: 120px;
 		}
 		#top-left{
 			float: left;
@@ -153,9 +157,67 @@
 			font-size: 11px;
 			text-align: justify;
 		}
+		.left-middle{
+			background: #f4f2e9;
+			border-radius: 10px;
+			font-family: sans-serif;
+			width: 550px;
+			height: 300px;
+			padding: 15px 0 20px 0;
+		}
+		.discover{
+			font-family: sans-serif;
+			font-size: 19px;
+			text-align: left;
+			padding: 0 0 0 10px;
+		}
+		.arrow{
+			float: right;
+			position: relative;
+			margin-top: -115px;
+			margin-left: 100px;
+		}
+		.discovery-one{
+			height: 160px;
+			width: 550px;
+			border-bottom: 30px solid #C5C2AD;
+		}
+		.liked{
+			background-color: transparent;
+			font-family: sans-serif;
+			font-size: 11px;
+			text-align: left;
+			padding: 30px 0 0 10px;
+			width: 330px;
+			height: 155px;
+			float: left;
+			position: relative;
+		}
+		#books{
+			float: left;
+			position: relative;
+			margin-top: -130px;
+			padding-left: 5px;
+		}
+		.books-liked{
+			float: left;
+    		height: 120px;
+    		margin: 0 3px 0 0;
+		}
+		.books-discovered{
+			background-color: transparent;
+			font-family: sans-serif;
+			font-size: 11px;
+			text-align: left;
+			padding: 30px 0 0 8px;
+			width: 200px;
+			height: 170px;
+			float: right;
+			position: relative;
+		}
 		.aside{
 			background-color: rgba(99,47,47,0.36);
-			width: 410px;
+			width: 360px;
 			float: right;
 			position: relative;
 			display: inline-block;
@@ -210,15 +272,6 @@
 		#Social-Icons{
 			display: inline-block;
 			margin-left: -10px;
-		}
-		.left-middle{
-			background-color: #f4f2e9;
-			border-radius: 10px;
-			border: 1px dotted black;
-			font-family: sans-serif;
-			width: 550px;
-			height: 300px;
-			padding: 15px 0 20px 0;
 		}
 	</style>
 </head>
@@ -286,11 +339,27 @@
 				</div>
 				<div class="left-middle">
 					<div>
-						What will you discover?
+						<div class="discover"><p>What will you discover?</p></div>
+						<div class="discovery-one">
+							<div class="liked">Because someone liked...</div>
+								<div id="books">
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1441779390m/33917.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1320562005m/4214.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1406383769m/49628.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1327882682m/1618.jpg" width="80" height="120"></span>
+								</div>
+							<div class="books-discovered">
+								<p>She discovered:</p>
+								<img src="http://d.gr-assets.com/books/1329421639m/50365.jpg" width="80" height="120">
+							</div>
+							<div class="arrow"><img src="http://s.gr-assets.com/assets/home/discovery_arrow.png"></div>
+						</div>
+						<div class="discovery-two">
+							
+						</div>
 					</div>
 				</div>
 				<div class="left-bottom">
-					
 				</div>
 			</div>
 			<aside>
