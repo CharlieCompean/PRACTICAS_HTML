@@ -111,13 +111,14 @@
 			text-align: center;
 		}
 		.Social{
-			background: -webkit-linear-gradient(top, #B7B7B7, #3E3434);
-			top: 62px;
-			height: 35px;
+			background: -webkit-linear-gradient(top, #8A8181, #000000);
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+			top: 40px;
+			height: 50px;
 			max-width: 250px;
 			margin: 0 auto;
 			position: relative;
-			float: center;
 			bottom: 0px;
 			padding-left: 3px;
 		}
@@ -174,8 +175,8 @@
 		.arrow{
 			float: right;
 			position: relative;
-			margin-top: -115px;
-			margin-left: 100px;
+			margin-top: -90px;
+			margin-right: 180px;
 		}
 		.discovery-one{
 			height: 160px;
@@ -192,6 +193,15 @@
 			height: 155px;
 			float: left;
 			position: relative;
+			display: inline-block;
+		}
+		#discovery-results{
+			font-family: sans-serif;
+			font-size: 12px;
+			font-weight: bold;
+			color: #660;
+			margin-left: 86px;
+			margin-top: -110px;
 		}
 		#books{
 			float: left;
@@ -199,21 +209,33 @@
 			margin-top: -130px;
 			padding-left: 5px;
 		}
+		/* #books-two{
+			margin-top: 130px;
+			padding-left: 5px;
+			position: relative;
+			display: inline-block;
+		} */
 		.books-liked{
 			float: left;
     		height: 120px;
-    		margin: 0 3px 0 0;
+    		margin: 0 5px 0 0;
 		}
 		.books-discovered{
 			background-color: transparent;
 			font-family: sans-serif;
 			font-size: 11px;
 			text-align: left;
-			padding: 30px 0 0 8px;
-			width: 200px;
+			padding-left: 1px;
 			height: 170px;
-			float: right;
-			position: relative;
+			display: inline-block;
+			margin-left: 35px;
+			margin-top: 19px;
+		}
+		.books-discovered p{
+    		-webkit-margin-before: 1em;
+    		-webkit-margin-after: 1em;
+    		-webkit-margin-start: 0px;
+   			-webkit-margin-end: 0px;
 		}
 		.aside{
 			background-color: rgba(99,47,47,0.36);
@@ -239,11 +261,12 @@
 			margin: 3px;
 		}
 		#button-sign-up{
-			background:-webkit-linear-gradient(top, #E4DBCE, #CE901F);
+			background:-webkit-linear-gradient(top, #FBFBFB, #E2A83E);
 			border: 0;
-			font-size: 17px;
+			border-radius: 10px;
+			font-size: 19px;
 			font-weight: bold;
-			padding: 8px;
+			padding: 11px;
 			font-family: sans-serif;
 			margin: 5px;
 		}
@@ -263,15 +286,16 @@
 			color: white;
 			display: inline-block;
 			float: left;
-			margin-top: 6px;
+			margin-top: 17px;
 			margin-left: 10px;
 		}
-		.social-icons{
-			margin: 2px;
+		.social-icon{
+			margin: 1px;
 		}
 		#Social-Icons{
 			display: inline-block;
 			margin-left: -10px;
+			margin-top: 13px;
 		}
 	</style>
 </head>
@@ -339,7 +363,7 @@
 				</div>
 				<div class="left-middle">
 					<div>
-						<div class="discover"><p>What will you discover?</p></div>
+						<div class="discover"><p>What will <i>you</i> discover?</p></div>
 						<div class="discovery-one">
 							<div class="liked">Because someone liked...</div>
 								<div id="books">
@@ -348,11 +372,16 @@
 								<span><img class="books-liked" src="http://d.gr-assets.com/books/1406383769m/49628.jpg" width="80" height="120"></span>
 								<span><img class="books-liked" src="http://d.gr-assets.com/books/1327882682m/1618.jpg" width="80" height="120"></span>
 								</div>
+							<div>
+								<img src="http://s.gr-assets.com/assets/home/discovery_arrow.png" class="arrow">
+							</div>
 							<div class="books-discovered">
 								<p>She discovered:</p>
-								<img src="http://d.gr-assets.com/books/1329421639m/50365.jpg" width="80" height="120">
+								<img src="http://d.gr-assets.com/books/1329421639m/50365.jpg" width="80" height="120" id="books-two">
+								<p id="discovery-results">
+									Contemporary,<br> Classics
+								</p>
 							</div>
-							<div class="arrow"><img src="http://s.gr-assets.com/assets/home/discovery_arrow.png"></div>
 						</div>
 						<div class="discovery-two">
 							
