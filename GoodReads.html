@@ -39,15 +39,17 @@
 		}
 		#good{
 			font-family: sans-serif;
-			font-size: 35px;
+			color: #705F50;
+			font-size: 40px;
 			padding-left: 10px;
 			font-style: normal;
 		}
 		#reads{
 			font-family: sans-serif;
-			font-size: 35px;
+			color: #463020;
+			font-size: 40px;
 			font-weight: bold;
-			padding-left: -5px;
+			margin-left: -4px;
 			font-style: normal;
 		}
 		.user-login{
@@ -131,14 +133,13 @@
 		}
 		.main-left{
 			background-color: transparent;
-			width: 600px;
+			width: 660px;
 			float: left;
 			position: relative;
 			display: inline-block;
 		}
 		.left-top{
-			float: center;
-			max-width: 550px;
+			max-width: 660px;
 			height: 120px;
 		}
 		#top-left{
@@ -154,20 +155,20 @@
 			margin-bottom: 10px;
 		}
 		.information{
-			font-family: sans-serif;
-			font-size: 11px;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 13px;
 			text-align: justify;
 		}
 		.left-middle{
 			background: #f4f2e9;
 			border-radius: 10px;
-			font-family: sans-serif;
-			width: 550px;
-			height: 300px;
+			font-family: Georgia, "Times New Roman", serif;
+			width: 660px;
+			height: 400px;
 			padding: 15px 0 20px 0;
 		}
 		.discover{
-			font-family: sans-serif;
+			font-family: Georgia, "Times New Roman", serif;
 			font-size: 19px;
 			text-align: left;
 			padding: 0 0 0 10px;
@@ -176,17 +177,22 @@
 			float: right;
 			position: relative;
 			margin-top: -90px;
-			margin-right: 180px;
+			margin-right: 226px;
 		}
 		.discovery-one{
 			height: 160px;
-			width: 550px;
+			width: 660px;
+			border-bottom: 30px solid #C5C2AD;
+		}
+		.discovery-two{
+			height: 160px;
+			width: 660px;
 			border-bottom: 30px solid #C5C2AD;
 		}
 		.liked{
 			background-color: transparent;
-			font-family: sans-serif;
-			font-size: 11px;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 13px;
 			text-align: left;
 			padding: 30px 0 0 10px;
 			width: 330px;
@@ -196,7 +202,7 @@
 			display: inline-block;
 		}
 		#discovery-results{
-			font-family: sans-serif;
+			font-family: Georgia, "Times New Roman", serif;
 			font-size: 12px;
 			font-weight: bold;
 			color: #660;
@@ -207,7 +213,10 @@
 			float: left;
 			position: relative;
 			margin-top: -130px;
-			padding-left: 5px;
+			padding-left: 20px;
+		}
+		.reflect{
+			-webkit-box-reflect: below -100px -webkit-gradient(linear, left top, left bottom, from(transparent), to(red));
 		}
 		/* #books-two{
 			margin-top: 130px;
@@ -218,14 +227,14 @@
 		.books-liked{
 			float: left;
     		height: 120px;
-    		margin: 0 5px 0 0;
+    		margin: 0 17px 0 0;
 		}
 		.books-discovered{
 			background-color: transparent;
-			font-family: sans-serif;
-			font-size: 11px;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 13px;
 			text-align: left;
-			padding-left: 1px;
+			padding-left: 76px;
 			height: 170px;
 			display: inline-block;
 			margin-left: 35px;
@@ -237,17 +246,40 @@
     		-webkit-margin-start: 0px;
    			-webkit-margin-end: 0px;
 		}
+		.search-books{
+			background-color: rgba(5,28,115,0.21);
+			width: 660px;
+			height: 300px;
+			margin-top: 20px;
+		}
+		.browse-box{
+			width: 660px;
+			height: 50px;
+			float: left;
+			position: relative;
+		}
+		#search-browse{
+			padding-left: 10px;
+		}
+		.genres{
+			width: 155px;
+			float: left;
+			position: relative;
+			padding-left: 10px;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 13px;
+		}
 		.aside{
 			background-color: rgba(99,47,47,0.36);
-			width: 360px;
+			width: 300px;
 			float: right;
 			position: relative;
 			display: inline-block;
 		}
 		.title{
-			font-family: sans-serif;
-			font-size: 19px;
-			text-align: center;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 20px;
+			text-align: left;
 			padding-top: 17px;
 		}
 		#name-address{
@@ -365,7 +397,7 @@
 					<div>
 						<div class="discover"><p>What will <i>you</i> discover?</p></div>
 						<div class="discovery-one">
-							<div class="liked">Because someone liked...</div>
+							<div class="liked">Because Karla liked...</div>
 								<div id="books">
 								<span><img class="books-liked" src="http://d.gr-assets.com/books/1441779390m/33917.jpg" width="80" height="120"></span>
 								<span><img class="books-liked" src="http://d.gr-assets.com/books/1320562005m/4214.jpg" width="80" height="120"></span>
@@ -377,18 +409,54 @@
 							</div>
 							<div class="books-discovered">
 								<p>She discovered:</p>
-								<img src="http://d.gr-assets.com/books/1329421639m/50365.jpg" width="80" height="120" id="books-two">
+								<img src="http://d.gr-assets.com/books/1329421639m/50365.jpg" width="80" height="120" class="reflect">
 								<p id="discovery-results">
 									Contemporary,<br> Classics
 								</p>
 							</div>
 						</div>
 						<div class="discovery-two">
-							
+							<div class="liked">Because Emmanuel liked...</div>
+								<div id="books">
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1388367666m/930.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1351979318m/2728527.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1388183358m/43641.jpg" width="80" height="120"></span>
+								<span><img class="books-liked" src="http://d.gr-assets.com/books/1346100365m/4667024.jpg" width="80" height="120"></span>
+								</div>
+							<div>
+								<img src="http://s.gr-assets.com/assets/home/discovery_arrow.png" class="arrow">
+							</div>
+							<div class="books-discovered">
+								<p>He discovered:</p>
+								<img src="http://d.gr-assets.com/books/1441760361m/3273.jpg" width="80" height="120" class="reflect">
+								<p id="discovery-results">
+									Historical Fiction,<br> Book Club
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="left-bottom">
+					<div class="search-books">
+						<div class="browse-box">
+							<p class="title" id="search-browse">Search and browse books</p>
+							<div class="search-form"></div>
+						</div>
+						<div class="genres">
+							Art<br>Biography<br>Business<br>Chick Lit<br>Children's<br>Christian<br>Classics<br>Comics<br>Contemporary<br>Cookbooks
+						</div>
+						<div class="genres">
+							Crime<br>Ebooks<br>Fantasy<br>Fiction<br>Gay and Lesbian<br>Graphic Novels<br>Historical Fiction<br>History<br>Horror<br>Humor and Comedy
+						</div>
+						<div class="genres">
+							Manga<br>Memoir<br>Music<br>Mistery<br>Non Fiction<br>Paranormal<br>Philosophy<br>Poetry<br>Psychology<br>Religion
+						</div>
+						<div class="genres">
+							Romance<br>Science<br>Science Fiction<br>Self Help<br>Suspense<br>Spirituality<br>Sports<br>Thriller<br>Travel<br><a href="http://www.goodreads.com/genres">More genres</a>
+						</div>
+					</div>
+					<div class="others-bottom"></div>
+					<div class="goodreads-awards"></div>
 				</div>
 			</div>
 			<aside>
