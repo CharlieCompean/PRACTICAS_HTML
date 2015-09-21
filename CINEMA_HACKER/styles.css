@@ -4,49 +4,29 @@
 body{
 	background-color: rgba(0, 0, 0, 0.08);
 }
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li {
-    float: left;
-}
-a:link, a:visited {
-    display: block;
-    min-width: 110px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: rgb(25, 179, 88);
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-a:hover, a:active {
-    background-color: rgb(25, 179, 300);
-}*/
+
+/* Estilos de header */
+
 .header{
 	background-color: rgb(0, 0, 0);
-	background-image: url(https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/banner.png);
+	background-image: url(https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/IMAGES/movie-theater.jpg);
+	background-size: cover;
+	background-position: left bottom;
 	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center top;
 	width: 100%;
-	height: 330px;
+	height: 190px;
 }
 .logo-content{
 	width: 100%;
-	height: 350px;
+	height: 200px;
 	background-color: transparent;
 }
 .logo-image{
 	float: left;
 	position: relative;
 	background-color: white;
-	height: 300px;
-	width: 450px;
+	height: 130px;
+	width: 200px;
 	background-color: transparent;
 	padding-left: 30px;
 	padding-top: 30px;
@@ -57,125 +37,225 @@ a:hover, a:active {
 	position: relative;
 	height: 55px;
 	width: 100%;
-	margin-top: -103px;
-	background-color: black;
+	margin-top: -85px;
+	background-color: transparent;
 	z-index: 1;
 }
-/*.reflect{
+.reflect{
 	-webkit-box-reflect: below -130px -webkit-gradient(linear, left top, left bottom, from(transparent), to(red));
-}*/
+}
 #name{
 	font-family: 'Cutive Mono', Courier;
 	font-weight: bolder;
 	text-shadow: -2px 3px 8px rgb(130, 127, 127);
 	color: white;
-	font-size: 40px;
-	padding-left: 500px;
-	padding-top: 5px;
+	font-size: 60px;
+	padding-left: 275px;
+	padding-top: 0px;
 }
+
+/* Estilos de barra de navegación */
 .navigation-bar{
 	width: 100%;
+	height: 113px;
 	float: left;
 	position: relative;
-	background-color: rgba(90, 150, 133, 0.76);
-	height: 70px;
-	margin-top: -20px;
+	background-color: transparent;
+	background-image: url(https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/IMAGES/NAV_FINAL.png);
+	margin-top: -15px;
 }
-#nav-text{
+#nav-content{
+	width: 100%;
+	height: 100px;
+	margin-top: 24px;
+}
+.nav-text{
 	font-family: 'Cutive Mono', Courier;
-	font-size: 18px;
+	font-size: 21px;
 	color: white;
-	margin: 20px 30px;
+	background-color: transparent;
+	padding: 20px 30px;
 	float: left;
 }
+.nav-text2{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 21px;
+	color: white;
+	background-color: transparent;
+	padding: 10px 30px;
+	float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+*a:link, a:visited {
+    display: block;
+    min-width: 100px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgb(25, 179, 88);
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover, a:active {
+    background-color: rgba(100, 0, 0, 0.40);
+}
+
+/* Estilos de contenido principal */
 .main{
 	background-color: rgba(90, 0, 0, 0.11);
 	max-width: 1000px;
-	min-height: 500px;
+	min-height: 1200px;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 120px;
 }
 .community{
 	background-color: rgba(90, 0, 0, 0.30);
 	width: 100%;
-	height: 150px;
+	height: 130px;
 	position: relative;
 }
 .avisos{
 	width: 600px;
-	height: 150px;
+	height: 130px;
 	outline: 1px solid black;
 	float: left;
 	position: relative;
 }
 .buscar{
 	width: 300px;
-	height: 85px;
+	height: 45px;
 	outline: 1px solid black;
 	float: right;
 	position: relative;
 }
+#formulario{
+	margin-top: 10px;
+	float: right;
+	margin-right: 10px;
+}
+.lupa{
+	margin-left: 5px;
+	float: right;
+	margin-top: -3px;
+}
 .redes{
 	width: 340px;
-	height: 65px;
+	height: 50px;
 	outline: 1px solid black;
 	float: right;
 	position: relative;
+	margin-top: 35px;
+}
+#social{
+	background: -webkit-linear-gradient(top, #8A8181, #000000);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 30px;
+	width: 220px;
+	float: right;
+	position: relative;
+	padding: 10px;
+}
+#social-text{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 16px;
+	color: white;
+	text-align: left;
+}
+.social-icon{
+	margin: 5px;
 }
 .mosaico{
 	background-color: rgba(30, 0, 0, 0.50);
 	width: 100%;
-	height: 720px;
+	height: 1000px;
 	position: relative;
 	margin-top: 0px;
 }
 .m-guion{
-	width: 315px;
+	width: 570px;
 	height: 500px;
 	outline: 1px solid black;
 	float: left;
 	position: relative;
 	margin-right: 30px;
-}
-.m-direc{
-	width: 315px;
-	height: 300px;
-	outline: 1px solid black;
-	float: left;
-	position: relative;
-	margin-right: 30px;
+	background-image: url(http://4.bp.blogspot.com/-L3flR2Ne32g/VftV89FBC5I/AAAAAAAARGs/H-d5PXCOOhg/s640/lo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .m-foto{
-	width: 310px;
-	height: 300px;
+	width: 400px;
+	height: 570px;
 	outline: 1px solid black;
 	float: left;
 	position: relative;
+	background-image: url(http://images.amcnetworks.com/amc.com/wp-content/uploads/2010/12/BB-S3-400x600.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
 }
-.m-cursos{
-	width: 655px;
-	height: 170px;
+.m-convoc{
+	width: 570px;
+	height: 400px;
 	outline: 1px solid black;
 	float: left;
+	position: relative;
+	margin-top: -40px;
+	margin-right: 30px;
+	background-image: url(http://i.oem.com.mx/4c3d44b5-8b98-4846-9f27-9d27b8ae3094.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+.m-cursos{
+	width: 400px;
+	height: 330px;
+	outline: 1px solid black;
+	float: right;
 	position: relative;
 	margin-top: 30px;
 }
-.m-convoc{
-	width: 485px;
-	height: 200px;
-	outline: 1px solid black;
-	float: left;
-	position: relative;
-	margin-top: 20px;
-	margin-right: 30px;
+.tres-quince{
+	background-color: rgba(0, 0, 0, 0.65);
+	height: 55px;
+	width: 450px;
+	float: right;
+	margin-top: 420px;
+	padding: 3px;
 }
-.m-foro{
-	width: 485px;
-	height: 200px;
-	outline: 1px solid black;
+.tres-dos{
+	background-color: rgba(0, 0, 0, 0.65);
+	height: 60px;
+	width: 320px;
+	float: right;
+	margin-top: 320px;
+	padding: 3px;
+	text-align: right;
+}
+.tres-tres{
+	background-color: rgba(0, 0, 0, 0.65);
+	height: 105px;
+	width: 330px;
 	float: left;
-	position: relative;
-	margin-top: 20px;
+	margin-top: 280px;
+	padding: 3px;
+	text-align: left;
+}
+#titulos-m{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 25px;
+	text-align: center;
+	color: white;
 }
 .community-contenido{
 	background-color: rgba(90, 0, 0, 0.30);
@@ -215,22 +295,50 @@ a:hover, a:active {
 	margin-top: 30px;
 }
 .footer{
-	background-color: rgba(90, 0, 0, 0.61);
+	background-color: rgba(100, 0, 0, 0.61);
+	background-image: url(https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/IMAGES/movie-theater.jpg);
+	background-position: top;
 	width: 100%;
 	height: 200px;
-	margin: 0 auto;
 }
-.bulletin{
-	width: 500px;
-	height: 190px;
+#bulletin{
+	width: 350px;
+	height: 130px;
 	outline: 1px solid black;
 	float: left;
 	position: relative;
 }
-.hacker{
-	width: 500px;
-	height: 190px;
+#hacker{
+	width: 350px;
+	height: 130px;
 	outline: 1px solid black;
 	float: right;
 	position: relative;
+}
+#Cinema_H{
+	width: 100%;
+	height: 60px;
+	outline: 1px solid black;
+	float: left;
+	position: relative;
+}
+.footer-text-center{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 19px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.footer-text-left{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 19px;
+	color: white;
+	padding: 20px 10px;
+}
+.footer-text-right{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 19px;
+	color: white;
+	padding: 20px 10px;
+	text-align: right;
 }

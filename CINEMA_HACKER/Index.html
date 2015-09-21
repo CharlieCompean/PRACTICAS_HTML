@@ -5,6 +5,7 @@
 	<title>Cinema Hacker</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href='https://fonts.googleapis.com/css?family=Cutive+Mono&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
@@ -12,24 +13,22 @@
 		<div class="header">
 			<div class="logo-content">
 				<div class="logo-image">
-				<!--	<img src="https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/movie.jpg" height="200" width="300" class="reflect"> -->
+					<img src="https://raw.githubusercontent.com/CharlieCompean/PRACTICAS_HTML/CINEMA_HACKER/CINEMA_HACKER/movie.jpg" height="130" width="200" class="reflect">
 				</div>
 				<div class="name-content">
 					<p id="name">Cinema Hacker</p>
 				</div>
 			</div>
 			<div class="navigation-bar">
-				<ul>
-					<li><a href="Index.html">Home</a></li>
-					<li><a href="screenwriting.html">Guión</a></li>
-					<li><a href="directing.html">Dirección</a></li>
-					<li><a href="cinematography.html">Fotografía</a></li>
-					<li><a href="art.html">Arte</a></li>
-					<li><a href="sound.html">Sonido</a></li>
-					<li><a href="production.html">Producción</a></li>
-					<li><a href="courses.html">Cursos y<br>Talleres</a></li>
-					<li><a href="calls.html">Convocatorias</a></li>
-					<li><a href="forum.html">Foro</a></li>
+				<ul id="nav-content">
+					<li><a href="Index.html" class="nav-text">Home</a></li>
+					<li><a href="screenwriting.html" class="nav-text2">Guión y<br>Dirección</a></li>
+					<li><a href="cinematography.html" class="nav-text">Fotografía</a></li>
+					<li><a href="art.html" class="nav-text">Arte</a></li>
+					<li><a href="sound.html" class="nav-text2">Sonido y<br>Producción</a></li>
+					<li><a href="courses.html" class="nav-text2">Cursos y<br>Talleres</a></li>
+					<li><a href="calls.html" class="nav-text">Convocatorias</a></li>
+					<li><a href="forum.html" class="nav-text">Foro</a></li>
 				</ul> 
 			</div>
 		</div>
@@ -37,21 +36,59 @@
 	<div class="main">
 		<div class="community">
 			<div class="avisos"></div>
-			<div class="buscar"></div>
-			<div class="redes"></div>
+			<div class="buscar">
+				<form id="formulario" method="get" action="https://www.google.com/search">
+				<input type="text" name="q" size="40" placeholder="Buscar"/>
+				<span class="lupa"><i class="material-icons">search</i></span>
+				</form>
+			</div>
+			<div class="redes">
+				<div id="social">
+					<span id="social-text">¡Síguenos!</span>
+					<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_facebook-99e862a1d6c0b1f359c0332006e16e10.png"/></span>
+					<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_twitter-9922ba9506d10862d03a558f4424c026.png"/></span>
+					<span class="social-icon"><img src="http://s.gr-assets.com/assets/home/homepage_signin_google-5e6d6f57a11fc40ae295bcaa0098b482.png"/>
+					</span>
+				</div>
+			</div>
 		</div>
 		<div class="mosaico">
-			<div class="m-guion"></div>
-			<div class="m-direc"></div>
-			<div class="m-foto"></div>
+			<div class="m-guion">
+				<a href="screenwriting.html/lolita" alt="Lolita">
+					<div class="tres-quince">
+						<p id="titulos-m">Lolita, la adolescente que enfrentó a Kubrick y Nabokov</p>
+					</div>
+				</a>
+			</div>
+			<div class="m-foto">
+				<a href="cinematography.html/breaking_bad">
+					<div class="tres-dos">
+						<p id="titulos-m">El poder de los movimientos de cámara</p>
+					</div>
+				</a>
+			</div>
+			<div class="m-convoc">
+				<a href="calls.html/48hrfilmproject_mex">
+					<div class="tres-tres">
+						<p id="titulos-m">Termina primera etapa de registro temprano para el rally mexicano</p>
+					</div>
+				</a>
+			</div>
 			<div class="m-cursos"></div>
-			<div class="m-convoc"></div>
-			<div class="m-foro"></div>
 		</div>
 	</div>
 	<div class="footer">
-		<div class="bulletin"></div>
-		<div class="hacker"></div>
+		<div id="bulletin">
+			<a href=""><p class="footer-text-left">Suscríbete al boletín</p></a>
+			<a href=""><p class="footer-text-left">Política de Privacidad</p></a>
+		</div>
+		<div id="hacker">
+			<a href=""><p class="footer-text-right">Contacto</p></a>
+			<a href=""><p class="footer-text-right">Filosofía Hacker</p></a>
+		</div>
+		<div id="Cinema_H">
+			<p class="footer-text-center">© 2015 Cinema Hacker</p>
+		</div>
 	</div>
 </body>
 </html>
