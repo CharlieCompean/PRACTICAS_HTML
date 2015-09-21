@@ -111,29 +111,53 @@ a:hover, a:active {
 
 /* Estilos de contenido principal */
 .main{
-	background-color: rgba(90, 0, 0, 0.11);
+	background-color: rgba(90, 0, 0, 0.09);
 	max-width: 1000px;
 	min-height: 1200px;
 	margin: 0 auto;
 	padding-top: 120px;
 }
 .community{
-	background-color: rgba(90, 0, 0, 0.30);
+/*	background-color: rgba(90, 0, 0, 0.30);*/
+	background-color: transparent;
 	width: 100%;
-	height: 130px;
+	height: 200px;
 	position: relative;
 }
 .avisos{
 	width: 600px;
 	height: 130px;
-	outline: 1px solid black;
+	margin-bottom: 10px;
+	outline: 0.5px solid rgba(90, 0, 0, 0.30);
 	float: left;
 	position: relative;
+	background-image: url(https://scontent-atl3-1.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/11947660_1036069799745012_822041872086205396_n.jpg?oh=f753a49d7a1d40ca3c909f1732d9a314&oe=569832C4);
+	background-size: cover;
+	background-position: left;
+}
+.banner-aviso{
+	width: 130px;
+	height: 40px;
+	background: -webkit-linear-gradient(top, #E28C8C, rgb(154, 44, 44));
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	margin-top: 45px;
+	margin-left: 455px;
+}
+#boton-aviso{
+	font-family: 'Cutive Mono', Courier;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: -2px 2px 20px #000000;
+	color: white;
+	padding: 3px;
 }
 .buscar{
 	width: 300px;
 	height: 45px;
-	outline: 1px solid black;
 	float: right;
 	position: relative;
 }
@@ -150,10 +174,9 @@ a:hover, a:active {
 .redes{
 	width: 340px;
 	height: 50px;
-	outline: 1px solid black;
 	float: right;
 	position: relative;
-	margin-top: 35px;
+	margin-top: 105px;
 }
 #social{
 	background: -webkit-linear-gradient(top, #8A8181, #000000);
@@ -175,16 +198,21 @@ a:hover, a:active {
 	margin: 5px;
 }
 .mosaico{
-	background-color: rgba(30, 0, 0, 0.50);
+/*	background-color: rgba(30, 0, 0, 0.50);*/
+	background-color: transparent;
 	width: 100%;
-	height: 1000px;
+	height: 1450px;
 	position: relative;
 	margin-top: 0px;
 }
 .m-guion{
-	width: 570px;
+	width: 568px;
 	height: 500px;
-	outline: 1px solid black;
+	border: 1px solid rgba(90, 0, 0, 0.30);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	float: left;
 	position: relative;
 	margin-right: 30px;
@@ -194,9 +222,12 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 }
 .m-foto{
-	width: 400px;
+	width: 398px;
 	height: 570px;
-	outline: 1px solid black;
+	border: 1px solid rgba(90, 0, 0, 0.30);
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	float: left;
 	position: relative;
 	background-image: url(http://images.amcnetworks.com/amc.com/wp-content/uploads/2010/12/BB-S3-400x600.jpg);
@@ -205,9 +236,13 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 }
 .m-convoc{
-	width: 570px;
+	width: 568px;
 	height: 400px;
-	outline: 1px solid black;
+	border: 1px solid rgba(90, 0, 0, 0.30);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	float: left;
 	position: relative;
 	margin-top: -40px;
@@ -217,13 +252,33 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 }
-.m-cursos{
-	width: 400px;
+.m-sonido{
+	width: 398px;
 	height: 330px;
-	outline: 1px solid black;
+	border: 1px solid rgba(90, 0, 0, 0.30);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	float: right;
 	position: relative;
 	margin-top: 30px;
+	background-image: url(http://archivo.eluniversal.com.mx/img/2015/02/Esp/martin_hernandez_audio_birdman_oscar-movil.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.m-cursos{
+	width: 100%;
+	height: 340px;
+	outline: 1px solid rgba(90, 0, 0, 0.30);
+	float: left;
+	position: relative;
+	margin-top: 150px;
+	background-image: url(http://www.cinetecanacional.net/imagenes/banners/X4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
 }
 .tres-quince{
 	background-color: rgba(0, 0, 0, 0.65);
@@ -235,7 +290,7 @@ a:hover, a:active {
 }
 .tres-dos{
 	background-color: rgba(0, 0, 0, 0.65);
-	height: 60px;
+	height: 80px;
 	width: 320px;
 	float: right;
 	margin-top: 320px;
@@ -244,10 +299,19 @@ a:hover, a:active {
 }
 .tres-tres{
 	background-color: rgba(0, 0, 0, 0.65);
-	height: 105px;
+	height: 107px;
 	width: 330px;
 	float: left;
 	margin-top: 280px;
+	padding: 3px;
+	text-align: left;
+}
+.tres-cuatro{
+	background-color: rgba(0, 0, 0, 0.65);
+	height: 60px;
+	width: 390px;
+	float: right;
+	margin-top: 260px;
 	padding: 3px;
 	text-align: left;
 }
@@ -263,36 +327,12 @@ a:hover, a:active {
 	height: 80px;
 	position: relative;
 }
-.redes-contenido{
-	width: 340px;
-	height: 80px;
-	outline: 1px solid black;
-	float: right;
-	position: relative;
-}
 .m-contenido{
 	background-color: rgba(30, 0, 0, 0.50);
 	width: 100%;
 	height: 720px;
 	position: relative;
 	margin-top: 0px;
-}
-.m-uno{
-	width: 315px;
-	height: 300px;
-	outline: 1px solid black;
-	float: left;
-	position: relative;
-	margin-right: 30px;
-	margin-top: 30px;
-}
-.m-dos{
-	width: 310px;
-	height: 300px;
-	outline: 1px solid black;
-	float: left;
-	position: relative;
-	margin-top: 30px;
 }
 .footer{
 	background-color: rgba(100, 0, 0, 0.61);
@@ -304,21 +344,18 @@ a:hover, a:active {
 #bulletin{
 	width: 350px;
 	height: 130px;
-	outline: 1px solid black;
 	float: left;
 	position: relative;
 }
 #hacker{
 	width: 350px;
 	height: 130px;
-	outline: 1px solid black;
 	float: right;
 	position: relative;
 }
 #Cinema_H{
 	width: 100%;
 	height: 60px;
-	outline: 1px solid black;
 	float: left;
 	position: relative;
 }
